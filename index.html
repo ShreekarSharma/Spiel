@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spiel</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="top">
+        <div class="social-links">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-tiktok"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-mastodon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a4 4 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522q0-1.288.66-2.046c.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764q.662.757.661 2.046z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-youtube"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-twitter-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-twitch"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142z"
+              />
+              <path
+                d="M11.857 3.143h-1.143V6.57h1.143zm-3.143 0H7.571V6.57h1.143z"
+              /></svg
+          ></a>
+        </div>
+        <div class="search-bar">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            class="search-input"
+            placeholder="Search"
+          />
+          <button class="btn-search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="white"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="middle">
+        <a href="" class="logo">Spiel</a>
+      </div>
+      <div class="bottom">
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="links">
+          <a href="" class="link">News</a>
+          <a href="" class="link">Reviews</a>
+          <a href="" class="link">Guides</a>
+          <a href="" class="link">Trending</a>
+          <a href="" class="link"
+            >Platform
+            <select name="platform" id="platform">
+              <option value="PlayStation">PlayStation</option>
+              <option value="Xbox">Xbox</option>
+              <option value="Nintendo">Nintendo</option>
+              <option value="PC">PC</option>
+              <option value="Mobile">Mobile</option>
+            </select>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main-content container">
+      <h2 class="heading">latest</h2>
+      <div class="latest-news">
+        <div class="left">
+          <div class="news-1">
+            <img
+              src="https://w0.peakpx.com/wallpaper/410/698/HD-wallpaper-angry-dragon-art.jpg"
+              alt="dragon"
+            />
+            <p class="category">News</p>
+            <h1>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex?
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et,
+              exercitationem repellendus voluptas sapiente pariatur eligendi
+              asperiores suscipit rem fuga cupiditate a nemo accusamus quia
+              unde! Quaerat fugiat dolorum nobis non.
+            </p>
+            <a href="" class="author">John Doe</a>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top">
+            <div class="news-2">
+              <img
+                src="https://png.pngtree.com/thumb_back/fh260/background/20230611/pngtree-anime-girl-wearing-headphones-image_2922085.jpg"
+                alt=""
+              />
+              <p class="category">News, Reviews</p>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+                unde ea.
+              </h3>
+              <a href="" class="author">John Doe</a>
+            </div>
+            <div class="news-3">
+              <img
+                src="https://t4.ftcdn.net/jpg/02/93/96/11/360_F_293961190_nctoQUfh13LmfWaHK0nTeUTbAQrLVBk9.jpg"
+                alt=""
+              />
+              <p class="category">Guides</p>
+              <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+              <a href="" class="author">John Doe</a>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="news-4">
+              <img
+                src="https://sm.ign.com/t/ign_in/news/b/bandai-nam/bandai-namco-warns-tekken-8-fans-against-playing-cracked-clo_3jt1.1200.jpg"
+                alt=""
+              />
+              <p class="category">News</p>
+              <h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla!
+              </h3>
+              <a href="" class="author">John Doe</a>
+            </div>
+            <div class="news-5">
+              <img
+                src="https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/04/sims-4-best-life-games.jpg"
+                alt=""
+              />
+              <p class="category">News, Reviews</p>
+              <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+              <a href="" class="author">John Doe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="heading">trending</h2>
+      <div class="trending-news">
+        <div class="news-1">
+          <img
+            src="https://wizarddojo.files.wordpress.com/2015/05/joel-and-ellie-looking.png"
+            alt=""
+          />
+          <p class="category">News, Reviews</p>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, unde
+            ea.
+          </h3>
+          <a href="" class="author">John Doe</a>
+        </div>
+        <div class="news-2">
+          <img
+            src="https://i.guim.co.uk/img/media/9991cf53210b5a96c42f3754d1c37103f4c1da89/36_0_1800_1080/master/1800.jpg?width=700&quality=85&auto=format&fit=max&s=5ecd2348d657a5ebdfab074a18e4588a"
+            alt=""
+          />
+          <p class="category">Guides</p>
+          <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <a href="" class="author">John Doe</a>
+        </div>
+
+        <div class="news-3">
+          <img
+            src="https://lifehacker.com/imagery/articles/01HF2H1T1799JMG2X7NTRDPP5J/hero-image.fill.size_1248x702.v1699836288.jpg"
+            alt=""
+          />
+          <p class="category">News</p>
+          <h3>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla!
+          </h3>
+          <a href="" class="author">John Doe</a>
+        </div>
+        <div class="news-4">
+          <img
+            src="https://assets1.ignimgs.com/2018/01/24/monsterhunterworldblog-1516809712015-1516811716019_160w.jpg?width=1280"
+            alt=""
+          />
+          <p class="category">News, Reviews</p>
+          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+          <a href="" class="author">John Doe</a>
+        </div>
+      </div>
+      <h2 class="heading">categories</h2>
+      <h1 class="categories-heading">
+        <a href="">Reviews.</a> <a href="">News.</a> <a href="">Guides.</a>
+        <a href="">Deals.</a> <a href="">Videos.</a>
+        <a href="">Reader Poll.</a> <a href="">Features.</a>
+        <a href="">Staff Picks.</a> <a href="">Game Culture.</a>
+        <a href="">Podcast.</a>
+      </h1>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>
+          At Spiel, every click is an adventure in the gaming world. Whether
+          you’re a casual or hardcore gamer, we’re your go-to for the latest
+          news, tips, and trends.
+        </p>
+        <form action="">
+          <label for=""
+            >Subscribe to our newsletters. We’ll keep you in the loop.
+          </label>
+          <div>
+            <input type="email" name="email" id="email" placeholder="Type your email..." />
+            <button type="submit" class="email-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-arrow-right"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
+                />
+              </svg>
+            </button>
+          </div>
+        </form>
+        <div class="social-links">
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-facebook"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-tiktok"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-mastodon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a4 4 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522q0-1.288.66-2.046c.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764q.662.757.661 2.046z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-youtube"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-twitter-x"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"
+              /></svg
+          ></a>
+          <a href=""
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="white"
+              class="bi bi-twitch"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142z"
+              />
+              <path
+                d="M11.857 3.143h-1.143V6.57h1.143zm-3.143 0H7.571V6.57h1.143z"
+              /></svg
+          ></a>
+        </div>
+        <div class="links">
+          <a href="" class="link">News</a>
+          <a href="" class="link">Reviews</a>
+          <a href="" class="link">Guides</a>
+          <a href="" class="link">Trending</a>
+          <a href="" class="link"
+            >Platform
+            <select name="platform" id="platform">
+              <option value="PlayStation">PlayStation</option>
+              <option value="Xbox">Xbox</option>
+              <option value="Nintendo">Nintendo</option>
+              <option value="PC">PC</option>
+              <option value="Mobile">Mobile</option>
+            </select>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
